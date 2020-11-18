@@ -5,8 +5,7 @@ using namespace std;
 // Prints roots of quadratic equation ax*2 + bx + x
 void findRoots(int a, int b, int c)
 {
-	// If a is 0, then equation is not quadratic, but
-	// linear
+	
 	if (a == 0) {
 		cout << "Invalid";
 		return;
@@ -33,13 +32,13 @@ void findRoots(int a, int b, int c)
 	}
 }
 
-// Driver code
+
 int main()
 {
 	int a,b,c;
 	cout<<"Enter the value of a, b and c:\n";
 cin>>a>>b>>c;
-	// Function call
+	
 	findRoots(a, b, c);
 	return 0;
 }
