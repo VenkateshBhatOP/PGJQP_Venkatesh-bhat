@@ -1,4 +1,4 @@
-/* C++ program to find roots of a quadratic equation */
+
 #include <bits/stdc++.h>
 using namespace std;
 
