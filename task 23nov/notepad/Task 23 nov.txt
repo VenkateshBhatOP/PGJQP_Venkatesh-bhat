@@ -1,0 +1,26 @@
+8]Access specifier:
+------------------
+
+Access specifier is used to determine if other class /function can access through member variables
+and functions of this particular class.
+Access specifier is of three types;
+1) Public: User can access through function member or variable of any  class.
+2) Private:Does not allow the user to access through any other class except itself.
+3) Protected://Not known// .Same as private and implemented in inheritance.
+========================================================================================================
+
+7]Static keyword:Static keyword in the sense can be used as variables as well as functions.
+----------------  
+a)static variables: Static vriables retains its value even after the program is executed.Hence the name "Static".
+Static variables should be initialized explicitly within the class or outside the class.
+
+b)static functions: static functions can only excess its variables.
+=========================================================================================================
+6] Difference in constructor and method:
+---------------------------------------
+                          Constructor                         |          Method
+
+1)Constructors do not have return type                       ---   methods have return type
+2)constructors gets invoked as soon as we initiate the class ---   methods has to be invoked explicitly
+3)public:                                                    ---   public/private:
+        .....;                                                                   .....;
