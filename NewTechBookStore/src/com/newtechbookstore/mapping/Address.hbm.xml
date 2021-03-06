@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.newtechbookstore.model.Address" table="ADDRESS">
+      <id name="addressId" type="integer">
+            <column name="ADDRESSID" length="40" />
+            <generator class="native" />
+        </id>
+
+        <property name="address" type="string">
+        <column name="ADDRESS" length="40"/>
+        
+        </property>
+    </class>
+</hibernate-mapping>
