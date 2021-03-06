@@ -5,13 +5,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>New Tech Book Store</title>
+<title>Success</title>
 </head>
 <body>
-<center><u><h1>New Tech Book Store </h1></u></center>
-<a href="registration.jsp">Register Here</a>
-<br>
+<center><u><h1>Login Successfull!!! Welcome :: ${username}</h1></u></center>
+<a href="index.jsp">Logout</a>
 
-<a href="login.jsp">Login Here</a>
 </body>
 </html>
