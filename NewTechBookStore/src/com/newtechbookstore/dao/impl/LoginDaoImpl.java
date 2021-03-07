@@ -34,7 +34,7 @@ public class LoginDaoImpl implements LoginDao{
 					customer.setLastname(stud.getLastname());
 					customer.setPassword(customer.getPassword());
 					customer.setPhone(stud.getPhone());
-					//customer.setCustomerAddress(stud.getCustomerAddress());
+					customer.setCustomerAddress(stud.getCustomerAddress());
 					customer.setUserid(stud.getUserid());
 					break;
 				}

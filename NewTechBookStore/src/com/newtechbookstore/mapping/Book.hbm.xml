@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.newtechbookstore.model.Book" table="BOOKDETAILS">
+      <id name="bookId" type="integer">
+            <column name="BOOKID" length="40" />
+            <generator class="native" />
+        </id>
+        <property name="bookName" type="string">
+            <column name="BOOKNAME" length="100" />
+        </property>
+        <property name="category" type="string">
+            <column name="CATEGORY" length="100" />
+        </property>
+        <property name="author" type="string">
+            <column name="BOOKAUTHOR" length="100" />
+        </property>
+        <property name="price" type="double">
+            <column name="BOOKPRICE" length="20" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

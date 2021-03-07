@@ -21,7 +21,7 @@
 <tr><td>Last Name:</td><td> ${customer.lastname }</td></tr>
 <tr><td>Gender:</td><td> ${customer.gender}</td></tr>
 <tr><td>Date of Birth:</td><td> ${customer.dob }</td></tr>
-<tr><td>Address:</td><td> ${customer.customerAddress}</td></tr> 
+<tr><td>Address:</td><td> ${customer.customerAddress.address}</td></tr> 
 <tr><td>Email ID:</td><td> ${customer.email }</td></tr>
 <tr><td>Phone No:</td><td> ${customer.phone }</td></tr>
 </tbody>

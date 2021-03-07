@@ -13,5 +13,6 @@
 		<property name="hibernate.format_sql">true</property>
     <mapping resource="com/newtechbookstore/mapping/Customer.hbm.xml"/>
     <mapping resource="com/newtechbookstore/mapping/Address.hbm.xml"/>
+    <mapping resource="com/newtechbookstore/mapping/Book.hbm.xml" />
   </session-factory>
 </hibernate-configuration>
