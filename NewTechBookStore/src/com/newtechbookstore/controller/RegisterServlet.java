@@ -89,6 +89,7 @@ public class RegisterServlet extends HttpServlet {
 			c.setPassword(password);
 			if (rdao.register(c)) {
 				RequestDispatcher rd = request.getRequestDispatcher("success.jsp");
+				request.setAttribute("customer", c);
 				rd.forward(request, response);
 			} else {
 				RequestDispatcher rd = request.getRequestDispatcher("error.jsp");
