@@ -1,11 +1,14 @@
 
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <style>
+body{
+background-color:#F6F7F9;
+}
+
 @charset "ISO-8859-1";
 
 
@@ -192,10 +195,13 @@ input::placeholder{
 color:grey;
 	font-size: 16px;
 	line-height: 20px;
+	
+	
 }
 #login{
 color:#273c75;
 }
+
 
 </style>
 <meta charset="ISO-8859-1">
@@ -211,7 +217,9 @@ color:#273c75;
 		<div class="box">
 			
 			<h1 id="login">Login</h1>
-			<form action="LoginController" method="post">
+			<form action="RecruiterLoginController" method="post">
+			<p>Username</p>
+			<input type="text" placeholder="Username" name="name" required>
 				<p>Email</p>
 				<input type="text" placeholder="Email" name="email" required>
 				<p>Password</p>
@@ -219,7 +227,7 @@ color:#273c75;
 					required> 
 					
 					
-				<input type="submit" value="Login"> <br> <a style="color:grey"class="home" href="RegisterServlet">Create
+				<input type="submit" value="Login"> <br> <a style="color:grey"class="home" href="recruiterregister.jsp">Create
 					New Account</a>
 			</form>
 		</div>

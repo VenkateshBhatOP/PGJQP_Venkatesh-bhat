@@ -43,6 +43,7 @@ public class UserDatabase {
         	user.setName(rs.getString("name"));
         	user.setEmail(rs.getString("email"));
         	user.setPassword(rs.getString("password"));
+        	user.setNotRecruiter(true);
         }
 		}
 		catch(Exception e) {

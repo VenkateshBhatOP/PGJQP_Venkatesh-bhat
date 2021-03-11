@@ -34,12 +34,13 @@ public class LoginController extends HttpServlet {
 		String lemail=request.getParameter("email");
 		String lpassword=request.getParameter("password");
 		
+		
 		UserDatabase db=new UserDatabase(ConnectionPro.getConnection());
 		User user=db.logUser(lemail, lpassword);
 		if(user!=null) { 
 			HttpSession session=request.getSession();
 		session.setAttribute("logUser",user);
-			response.sendRedirect("Welcome.jsp");
+			response.sendRedirect("userwelcome.jsp");
 		}else { 
 
 		out.print("user not found");

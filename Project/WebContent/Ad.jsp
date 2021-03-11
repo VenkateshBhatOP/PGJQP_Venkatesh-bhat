@@ -1,4 +1,6 @@
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
@@ -7,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<iFrame style="margin-left:230px;height:385px;margin-top:74px;width:846px" name="display" scrolling="auto" src="img/naukriad.jpg">
+<iFrame style="margin-left:230px;height:385px;margin-top:74px;width:846px" name="display"  src="img/user-list.jsp">
 </iFrame>
 </body>
 

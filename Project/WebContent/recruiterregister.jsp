@@ -1,11 +1,13 @@
 
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+<style type="text/css">
+body{
+background-color:#F6F7F9;
+}
 @charset "ISO-8859-1";
 
 
@@ -193,40 +195,34 @@ color:grey;
 	font-size: 16px;
 	line-height: 20px;
 }
-#login{
-color:#273c75;
-}
+
 
 </style>
-<meta charset="ISO-8859-1">
-<title>Login</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Register Account</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<body>
 	<div class="container">
-		<div class="box">
+		<div class="regbox ">
 			
-			<h1 id="login">Login</h1>
-			<form action="LoginController" method="post">
+			<h1 style="color:#273c75">Register Account</h1>
+			<form action="RecruiterRegisterController" method="post">
+				<p>Username</p>
+				<input type="text" placeholder="Username" name="name" required>
+				<p>Company name</p>
+				<input type="text" placeholder="Company name" name="company" required>
 				<p>Email</p>
 				<input type="text" placeholder="Email" name="email" required>
 				<p>Password</p>
 				<input type="password" placeholder="Password" name="password"
-					required> 
-					
-					
-				<input type="submit" value="Login"> <br> <a style="color:grey"class="home" href="RegisterServlet">Create
-					New Account</a>
+					required> <input type="submit" value="Register"> <a style="color:grey"class="account"
+					href="recruiterlogin.jsp">Already have Account?</a>
 			</form>
 		</div>
 	</div>
-
-	
 </body>
-
-
 </html>
