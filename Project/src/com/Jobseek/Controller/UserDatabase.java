@@ -30,6 +30,7 @@ public class UserDatabase {
 		return set;
 	}
 	
+	//Login method Just for "Normal" User - Not Recruiter
 	public User logUser(String email,String password) {
 		User user=null;
 		try {

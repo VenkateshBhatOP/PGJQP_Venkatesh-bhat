@@ -3,6 +3,8 @@
     pageEncoding="ISO-8859-1"%>
 <%
 User user = (User) session.getAttribute("logUser");
+/* Resetting the NotRecruiter flag - since here we don't know whether person is 
+recruiter or normal user */
 if (user != null) {
 	user.setNotRecruiter(false);
 }

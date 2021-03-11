@@ -17,9 +17,25 @@
 	<header>
 		<nav class="navbar navbar-expand-md navbar-dark"
 			style="background-color: tomato">
-			<div>
+			
+			<%
+			User actualUser = (User) session.getAttribute("logUser");
+			if (actualUser != null && actualUser.isNotRecruiter())
+			{
+			%>
+				
+			<%	
+			}
+			else
+			{
+			%>
+				<div>
 				<a href="recruiternavbar.jsp" class="navbar-brand"> Back to Homepage</a>
-			</div>
+				</div>
+			<%
+			}
+			%>
+			
 
 			<ul class="navbar-nav">
 				<li><a href="<%=request.getContextPath()%>/list"
@@ -35,11 +51,26 @@
 		<div class="container">
 			<h3 class="text-center">List of OpenJobs</h3>
 			<hr>
-			<div class="container text-left">
+
+			<%
+			if (actualUser != null && actualUser.isNotRecruiter())
+			{
+			%>
+				
+			<%	
+			}
+			else
+			{
+			%>
+				<div class="container text-left">
 
 				<a href="<%=request.getContextPath()%>/new" class="btn btn-success">Add
 					New Job</a>
-			</div>
+				</div>
+			<%
+			}
+			%>
+			
 			<br>
 			<table class="table table-bordered">
 				<thead>
@@ -68,13 +99,8 @@
 							<td><c:out value="${user.skills }"/></td>
 							<td><c:out value="${user.jobdescription }"/></td>
 							<td><c:out value="${user.joblocation }"/></td>
-							<%-- <c:if test="${logUser==null }">
-								<td><a href="edit?id=<c:out value='${user.id}' />">Edit</a>
-									&nbsp;&nbsp;&nbsp;&nbsp; <a
-									href="delete?id=<c:out value='${user.id}' />">Delete</a></td>
-							</c:if> --%>
+						
 							<%
-							User actualUser = (User) session.getAttribute("logUser");
 							if (actualUser != null && actualUser.isNotRecruiter())
 							{
 							%>
@@ -91,10 +117,6 @@
 							}
 							%>
 							
-							<%-- <c:if test="${logUser!=null }">
-								<td><button>Apply</button></td>
-
-							</c:if> --%>
 						</tr>
 					</c:forEach>
 					<!-- } -->
