@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	<bean id="CustomerBean" class="com.chapter2.exercise1.Customer">
+	<property name="firstName" value="John"/>
+	<property name="middleName" value="K"/>
+	<property name="lastName" value="Philip"/>
+	<property name="dateOfBirth" value="13"/>
+	<property name="monthOfBirth" value="09"/>
+	<property name="yearOfBirth" value="1975"/>
+	<property name="motherName" value="Kathy Philip"/>
+	<property name="emailID" value="John.Philip@hotmail.com"/>
+	<property name="gender" value="Male"/>
+	<property name="maritalStatus" value="Single"/>
+	<property name="houseNo" value="10"/>
+	<property name="streetName" value="Park Street"/>
+	<property name="state" value="Florida"/>
+	<property name="city" value="Miami"/>
+	<property name="pincode" value="1A5012"/>
+	<property name="phone" value="56894561"/>
+	<property name="userName" value="984568954"/>
+	<property name="password" value="56894561"/>
+	</bean>
+	
+	<bean id="RoomsBean" class="com.chapter2.exercise1.Rooms">
+	<property name="RoomNo" value="101"/>
+	<property name="bedSize" value="king"/>
+	<property name="price" value="1200.657"/>
+	</bean>
+	
+	<bean id="BookingDetailsBean" class="com.chapter2.exercise1.BookingDetails">
+	<property name="payMethod" value="cash"/>
+	</bean>
+		
+	
+	
+	</beans>
+	
